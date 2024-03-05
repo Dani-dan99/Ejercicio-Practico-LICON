@@ -1,11 +1,15 @@
 import { titleFont } from "@/config/fonts";
 import Image from "next/image";
+import { Card } from "@/components";
 
 export default function Home() {
   return (
-    <main className="">
-     <h1>Hola Mundo</h1>
-     <h1 className={ titleFont.className }>Hola Mundo</h1>
-    </main>
+    <div className="flex items-center justify-center h-screen">
+      <Card
+        title="Ejercicio Práctico"
+        subtitle="Check the status of your task below:"
+        className="mt-auto mb-2 px-0 sm:px-20"
+      />
+    </div>
   );
 }
